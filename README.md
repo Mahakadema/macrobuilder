@@ -28,5 +28,5 @@ An example input JSON is included in the repository.
 | b \<key> \<delay> | Pushes down a keyboard key for *delay* milliseconds; Some control keys may not be supported yet. You can fix this by manually adding the scancode, key display code, flag at button-down and flag offset at button-up in the keymap in the source code | `b k 300` |
 | bd \<key> \[delay] | Pushes down a keyboard key after an optional *delay* milliseconds of delay; does not release the key; if you call `bd`, you need to call `bu` later | `bd rshift` |
 | bu \<key> \[delay] | Releases a keyboard key that was pushed down beforehands after an optional delay; the button has to have been pressed down via `bu` earlier | `bu rshift` |
-| p \[~]\<x> \[~]\<y> | Moves the mouse cursor either to a specific location, or relative to its' current position; relative movement is prepended with `~`; absolute movement is only possible if the macro has a start position | `p 500 550`, `p ~25 ~-50` |
+| p \[\~]\<x> \[\~]\<y> | Moves the mouse cursor either to a specific location, or relative to its' current position; relative movement is prepended with `~`; absolute movement is only possible if the macro has a start position | `p 500 550`, `p ~25 ~-50` |
 | w \<delay> | Adds a delay before the next command is called | `w 500` |
