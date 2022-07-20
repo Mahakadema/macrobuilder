@@ -17,6 +17,7 @@ To generate a macro, define a file `input.json` and run `node .`. The JSON file 
 }
 ```
 If the mouse position should not be set at the start of the macro, `startPosition` should be `null`. In that case the macro may not use absolute position modifiers such as `p 150 445`, but may only use relative motion such as `p ~50 ~-25`.
+An example input JSON is included in the repository.
 ## Valid Commands
 | Command | Description | Example |
 | ------- | ----------- | ------- |
